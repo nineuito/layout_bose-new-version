@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="page">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nothing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet"
+  >
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
-<body>
-  
+<body class="page__body">
+  <header class="header">
+    <div class="top-bar header__top">
+      <a href="#" class="top-bar__logo">
+        <img src="images/logo_top.png" alt="logo">
+      </a>
+
+      <div class="top-bar__icons">
+        <a href="#" class="icon icon--phone"></a>
+        <a href="#menu" class="icon icon--menu"></a>
+      </div>
+    </div>
+
+    <div class="header__bottom">
+      <h1 class="header__title">Bring joy back to the everyday</h1>
+    </div>
+  </header>
+
+  <aside class="menu page__menu" id="menu">
+    <div class="top-bar menu__top">
+      <a href="#" class="top-bar__logo">
+        <img src="images/logo_top.png" alt="logo">
+      </a>
+      <a href="#" class="icon icon--close"></a>
+    </div>
+
+    <div class="menu__content">
+      <nav class="nav menu__nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Products</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Store</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Login</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Cart(0)</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="tel:+1 234 5555-55-55" class="menu__order menu__phone-number">+1 234 5555-55-55</a>
+      <a href="tel:+1 234 5555-55-55" class="menu__order menu__call-to-order">call to order</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <section class="section">Lorem.</section>
+    <section class="section">Lorem.</section>
+    <section class="section">Lorem.</section>
+    <section class="section">Lorem.</section>
+  </main>
+
+  <footer class="footer"></footer>
 </body>
 </html>

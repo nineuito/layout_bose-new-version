@@ -1,0 +1,35 @@
+.menu {
+  box-sizing: border-box;
+  background-color: var(--color--bg-grey);
+  height: 100vh;
+}
+
+.menu__top {
+  margin-bottom: 32px;
+}
+
+.menu__nav {
+  margin-bottom: 48px;
+}
+
+.menu__content {
+  margin-inline: 20px;
+}
+
+.menu__order {
+  letter-spacing: 2px;
+  line-height: 22.4px;
+  text-decoration: none;
+  color: var(--color--black);
+}
+
+.menu__phone-number {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.menu__call-to-order {
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--color--black);
+}
