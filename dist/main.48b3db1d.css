@@ -112,35 +112,80 @@ video {
   pointer-events: all;
 }
 
+.header {
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: url(/header-bg-mobile.cca99dcf.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header__bottom {
+  padding-bottom: 40px;
+  padding-inline: 20px;
+}
+@media (min-width: 576px) {
+  .header__bottom {
+    padding-inline: 72px;
+  }
+}
+@media (min-width: 576px) {
+  .header__bottom {
+    padding-block: 65px;
+  }
+}
+.header__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
 .icon {
+  display: block;
   height: 24px;
   width: 24px;
+  background-size: cover;
+}
+@media (min-width: 576px) {
+  .icon {
+    height: 32px;
+    width: 32px;
+  }
 }
 .icon--phone {
   background-image: url(/icon-phone-call.56d3099d.png);
 }
 .icon--menu {
   background-image: url(/icon-burger-menu.dbf07cf7.png);
+  transition-duration: 0.3s;
 }
-@media (hover: hover) {
-  .icon--menu:hover {
-    background-image: url(/icon-burger-menu-hover.e59c060e.png);
-  }
+.icon--menu:hover {
+  background-image: url(/icon-burger-menu-hover.e59c060e.png);
 }
-@media (hover: none) {
-  .icon--menu:active {
-    background-image: url(/icon-burger-menu-hover.e59c060e.png);
-  }
+.icon--menu:active {
+  background-image: url(/icon-burger-menu-hover.e59c060e.png);
 }
 .icon--close {
   background-image: url(/icon-close.8feb9223.png);
 }
 
 .top-bar {
-  padding: 24px 20px;
+  padding-block: 24px;
+  padding-inline: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 576px) {
+  .top-bar {
+    padding-inline: 72px;
+  }
+}
+@media (min-width: 576px) {
+  .top-bar {
+    padding-block: 32px;
+  }
 }
 .top-bar__logo {
   display: flex;
@@ -162,7 +207,12 @@ video {
   margin-bottom: 48px;
 }
 .menu__content {
-  margin-inline: 20px;
+  padding-inline: 20px;
+}
+@media (min-width: 576px) {
+  .menu__content {
+    padding-inline: 72px;
+  }
 }
 .menu__order {
   letter-spacing: 2px;
@@ -178,26 +228,6 @@ video {
   text-transform: uppercase;
   padding-bottom: 4px;
   border-bottom: 1px solid #292929;
-}
-
-.header {
-  box-sizing: border-box;
-  height: 100vh;
-  background-image: url(/header-bg-mobile.cca99dcf.png);
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.header__bottom {
-  padding: 0 20px 40px;
-}
-
-.header__title {
-  font-size: 36px;
-  line-height: 36px;
 }
 
 .nav__list {
