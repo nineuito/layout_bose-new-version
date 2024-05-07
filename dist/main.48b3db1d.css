@@ -1,0 +1,217 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #292929;
+  scroll-behavior: smooth;
+}
+.page__menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.page__menu:target {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.icon {
+  height: 24px;
+  width: 24px;
+}
+.icon--phone {
+  background-image: url(/icon-phone-call.56d3099d.png);
+}
+.icon--menu {
+  background-image: url(/icon-burger-menu.dbf07cf7.png);
+}
+@media (hover: hover) {
+  .icon--menu:hover {
+    background-image: url(/icon-burger-menu-hover.e59c060e.png);
+  }
+}
+@media (hover: none) {
+  .icon--menu:active {
+    background-image: url(/icon-burger-menu-hover.e59c060e.png);
+  }
+}
+.icon--close {
+  background-image: url(/icon-close.8feb9223.png);
+}
+
+.top-bar {
+  padding: 24px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-bar__logo {
+  display: flex;
+}
+.top-bar__icons {
+  display: flex;
+  gap: 24px;
+}
+
+.menu {
+  box-sizing: border-box;
+  background-color: #E5E6E8;
+  height: 100vh;
+}
+.menu__top {
+  margin-bottom: 32px;
+}
+.menu__nav {
+  margin-bottom: 48px;
+}
+.menu__content {
+  margin-inline: 20px;
+}
+.menu__order {
+  letter-spacing: 2px;
+  line-height: 22.4px;
+  text-decoration: none;
+  color: #292929;
+}
+.menu__phone-number {
+  display: block;
+  margin-bottom: 16px;
+}
+.menu__call-to-order {
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #292929;
+}
+
+.header {
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: url(/header-bg-mobile.cca99dcf.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header__bottom {
+  padding: 0 20px 40px;
+}
+
+.header__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 22px;
+  letter-spacing: 2px;
+  line-height: 22px;
+  list-style: none;
+}
+.nav__link {
+  text-decoration: none;
+  color: #292929;
+}
+
+/*# sourceMappingURL=/main.48b3db1d.css.map */
